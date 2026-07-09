@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>飞享 IM Windows 下载</title>
+  <style>
+    body { margin: 0; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; background: #f5f5f5; color: #111; }
+    main { max-width: 820px; margin: 0 auto; padding: 40px 20px; }
+    .card { background: #fff; border: 1px solid #e5e5e5; border-radius: 10px; padding: 28px; }
+    h1 { margin: 0 0 12px; font-size: 26px; }
+    h2 { margin: 24px 0 10px; font-size: 18px; }
+    p, li { color: #555; line-height: 1.7; }
+    .button { display: inline-block; margin: 18px 10px 18px 0; padding: 13px 22px; background: #07c160; color: #fff; border-radius: 6px; text-decoration: none; font-weight: 600; }
+    .secondary { background: #f2f2f2; color: #222; }
+    .danger { background: #fff4f4; border: 1px solid #ffd2d2; color: #a40000; border-radius: 8px; padding: 12px 14px; }
+    .meta { width: 100%; border-collapse: collapse; margin-top: 16px; font-size: 14px; }
+    .meta th { width: 130px; text-align: left; color: #666; font-weight: 500; padding: 9px 0; border-top: 1px solid #eee; }
+    .meta td { padding: 9px 0; border-top: 1px solid #eee; word-break: break-all; }
+    nav a { margin-right: 14px; color: #07a34a; }
+    .notice { margin-top: 18px; color: #777; font-size: 13px; }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="card">
+      <h1>飞享 IM Windows 下载</h1>
+      <p>这是飞享 IM Windows live RC 候选包下载页。本版用于 Windows 端旧 Android 能力对齐验证和公开测试分发，下载后请先核对 SHA256，再完整解压 ZIP 目录运行。</p>
+      <p class="danger">当前 Windows 包未代码签名，系统可能提示未知发布者或 SmartScreen 拦截。请只从本页面下载，并核对 SHA256。</p>
+      <a class="button" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-rc-20260709-2b75f730/feixiang-im-windows-0.1.0-rc.20260709-2b75f730.zip">下载 Windows ZIP</a>
+      <a class="button secondary" href="./rollback.html">回滚说明</a>
+      <table class="meta">
+        <tr><th>版本</th><td>0.1.0 RC 20260709-2b75f730</td></tr>
+        <tr><th>文件大小</th><td>49651974 bytes</td></tr>
+        <tr><th>SHA256</th><td>74B303588B4B907837835A1F99287570BFB85DF179A6CC5D3EB50F67B2B6DD18</td></tr>
+        <tr><th>源码提交</th><td>2b75f730857a016cf101634cc24edaf99d83cf57</td></tr>
+        <tr><th>测试后端</th><td>http://23.26.204.90 测试环境</td></tr>
+        <tr><th>签名状态</th><td>NotSigned，未签名 ZIP 候选</td></tr>
+        <tr><th>Release</th><td><a href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/tag/windows-live-0.1.0-rc-20260709-2b75f730">windows-live-0.1.0-rc-20260709-2b75f730</a></td></tr>
+      </table>
+      <h2>安装方式</h2>
+      <ol>
+        <li>下载 ZIP 和 SHA256，确认文件来自本页面。</li>
+        <li>校验 ZIP SHA256 与页面一致。</li>
+        <li>完整解压 ZIP 目录，不要只复制单个 exe。</li>
+        <li>运行解压目录中的 <code>im_flutter.exe</code>。</li>
+      </ol>
+      <h2>当前边界</h2>
+      <ul>
+        <li>当前包连接测试后端；切换生产环境必须重新构建并回归。</li>
+        <li>Windows 通知按应用内未读降级，不承诺系统 toast 或离线必达。</li>
+        <li>H5 按外部浏览器打开或安全阻断，不承诺内嵌 WebView2 或 JS bridge。</li>
+        <li>电话拦截、通话记录、系统悬浮窗、应用内安装 APK 不支持。</li>
+      </ul>
+      <nav><a href="./privacy.html">隐私政策</a><a href="./agreement.html">用户协议</a><a href="./support.html">客服反馈</a><a href="./rollback.html">回滚入口</a></nav>
+      <p class="notice">如果遇到安装拦截、解压失败、登录失败、NIM 连接、钱包红包或回滚问题，请通过客服反馈入口提交。</p>
+    </section>
+  </main>
+</body>
+</html>
+

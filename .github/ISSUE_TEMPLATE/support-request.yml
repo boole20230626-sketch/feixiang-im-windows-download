@@ -1,0 +1,48 @@
+name: Windows 客服反馈
+description: 安装、下载、登录、IM、钱包红包、H5、回滚或账号安全问题
+title: "[Windows 支持] "
+labels:
+  - support
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请不要填写密码、token、nimtoken、云信 app secret、SSH 密码、银行卡号、支付密码或身份证照片。
+  - type: input
+    id: version
+    attributes:
+      label: Windows 包版本
+      description: 例如 0.1.0-rc.20260709-2b75f730
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: 问题类型
+      options:
+        - 下载或 SHA256 校验
+        - 解压或启动
+        - SmartScreen 或未知发布者
+        - 登录或注册
+        - NIM/IM 或群聊
+        - 钱包或红包
+        - H5 外部打开
+        - 回滚
+        - 账号安全或协议隐私
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 问题描述
+      description: 请描述现象、操作步骤、错误提示和期望结果。
+    validations:
+      required: true
+  - type: input
+    id: windows
+    attributes:
+      label: Windows 版本
+      description: 例如 Windows 10 22H2 / Windows 11 23H2
+    validations:
+      required: false
