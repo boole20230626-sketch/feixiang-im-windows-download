@@ -25,18 +25,18 @@
   <main>
     <section class="card">
       <h1>飞享 IM Windows 下载</h1>
-      <p>这是飞享 IM Windows live P11 公开测试包下载页。本版用于 Windows 端旧 Android 能力对齐验证和公开测试分发，下载后请先核对 SHA256，再完整解压 ZIP 目录运行。</p>
+      <p>这是飞享 IM Windows 公开下载页。本版用于 Windows 客户端分发，下载后请先核对 SHA256，再完整解压 ZIP 目录运行。</p>
       <p class="danger">当前 Windows 包未代码签名，系统可能提示未知发布者或 SmartScreen 拦截。请只从本页面下载，并核对 SHA256。</p>
       <a class="button" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-p11-20260714-94b9404f/FeiXiang-IM-Windows-live-clean-package-20260714-192219-94b9404f.zip">下载 Windows ZIP</a>
       <a class="button secondary" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-p11-20260714-94b9404f/FeiXiang-IM-Windows-live-clean-package-20260714-192219-94b9404f.zip.sha256">下载 SHA256</a>
       <a class="button secondary" href="./rollback.html">回滚说明</a>
       <table class="meta">
-        <tr><th>版本</th><td>0.1.0 P11 20260714-94b9404f installer refresh</td></tr>
+        <tr><th>版本</th><td>0.1.0 20260714-94b9404f</td></tr>
         <tr><th>文件大小</th><td>49868507 bytes</td></tr>
         <tr><th>SHA256</th><td>324C5B0A5F9B93F4001DBA448F56F3AE309282760B08F891C43EA44365A72614</td></tr>
         <tr><th>源码提交</th><td>94b9404f</td></tr>
-        <tr><th>运行环境</th><td>live 测试环境，非生产签名 GA 包</td></tr>
-        <tr><th>签名状态</th><td>NotSigned，未签名 ZIP 测试包</td></tr>
+        <tr><th>服务环境</th><td>飞享服务环境</td></tr>
+        <tr><th>签名状态</th><td>NotSigned，未签名 ZIP 包</td></tr>
         <tr><th>Release</th><td><a href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/tag/windows-live-0.1.0-p11-20260714-94b9404f">windows-live-0.1.0-p11-20260714-94b9404f</a></td></tr>
       </table>
       <h2>安装方式</h2>
@@ -49,11 +49,11 @@
         <li>也可以不安装，直接运行解压目录中的 <code>FeiXiangIM.exe</code>。</li>
         <li>需要卸载时运行解压目录中的 <code>uninstall.cmd</code>。</li>
       </ol>
-      <h2>当前边界</h2>
+      <h2>版本说明</h2>
       <ul>
-        <li>当前包连接 live 测试环境；切换生产环境必须重新构建并回归。</li>
-        <li>Windows 通知按应用内未读降级，不承诺系统 toast 或离线必达。</li>
-        <li>H5 按外部浏览器打开或安全阻断，不承诺内嵌 WebView2 或 JS bridge。</li>
+        <li>当前包连接飞享服务环境；切换服务环境必须重新构建并回归。</li>
+        <li>Windows 通知以应用内未读提醒为准，系统 toast 或离线到达能力以当前系统配置为准。</li>
+        <li>H5 按外部浏览器打开或安全阻断策略处理，不承诺内嵌 WebView2 或 JS bridge。</li>
         <li>电话拦截、通话记录、系统悬浮窗、应用内安装 APK 不支持。</li>
       </ul>
       <nav><a href="./privacy.html">隐私政策</a><a href="./agreement.html">用户协议</a><a href="./support.html">客服反馈</a><a href="./rollback.html">回滚入口</a></nav>
