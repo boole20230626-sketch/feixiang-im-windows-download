@@ -27,16 +27,17 @@
       <h1>飞享 IM Windows 下载</h1>
       <p>这是飞享 IM Windows live P11 公开测试包下载页。本版用于 Windows 端旧 Android 能力对齐验证和公开测试分发，下载后请先核对 SHA256，再完整解压 ZIP 目录运行。</p>
       <p class="danger">当前 Windows 包未代码签名，系统可能提示未知发布者或 SmartScreen 拦截。请只从本页面下载，并核对 SHA256。</p>
-      <a class="button" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-p11-20260714-22899953/feixiang-im-windows-0.1.0-p11.20260714-22899953.zip">下载 Windows ZIP</a>
+      <a class="button" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-p11-20260714-94b9404f/FeiXiang-IM-Windows-live-clean-package-20260714-192219-94b9404f.zip">下载 Windows ZIP</a>
+      <a class="button secondary" href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/download/windows-live-0.1.0-p11-20260714-94b9404f/FeiXiang-IM-Windows-live-clean-package-20260714-192219-94b9404f.zip.sha256">下载 SHA256</a>
       <a class="button secondary" href="./rollback.html">回滚说明</a>
       <table class="meta">
-        <tr><th>版本</th><td>0.1.0 P11 20260714-22899953 portable installer</td></tr>
-        <tr><th>文件大小</th><td>49867276 bytes</td></tr>
-        <tr><th>SHA256</th><td>B139981348191E9A53307923EAA70680D52902EBF657938360265DE644A76B84</td></tr>
-        <tr><th>源码提交</th><td>22899953</td></tr>
+        <tr><th>版本</th><td>0.1.0 P11 20260714-94b9404f installer refresh</td></tr>
+        <tr><th>文件大小</th><td>49868507 bytes</td></tr>
+        <tr><th>SHA256</th><td>324C5B0A5F9B93F4001DBA448F56F3AE309282760B08F891C43EA44365A72614</td></tr>
+        <tr><th>源码提交</th><td>94b9404f</td></tr>
         <tr><th>运行环境</th><td>live 测试环境，非生产签名 GA 包</td></tr>
         <tr><th>签名状态</th><td>NotSigned，未签名 ZIP 测试包</td></tr>
-        <tr><th>Release</th><td><a href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/tag/windows-live-0.1.0-p11-20260714-22899953">windows-live-0.1.0-p11-20260714-22899953</a></td></tr>
+        <tr><th>Release</th><td><a href="https://github.com/boole20230626-sketch/feixiang-im-windows-download/releases/tag/windows-live-0.1.0-p11-20260714-94b9404f">windows-live-0.1.0-p11-20260714-94b9404f</a></td></tr>
       </table>
       <h2>安装方式</h2>
       <ol>
@@ -44,6 +45,7 @@
         <li>校验 ZIP SHA256 与页面一致。</li>
         <li>完整解压 ZIP 目录，不要只复制单个 exe。</li>
         <li>推荐运行解压目录中的 <code>install.cmd</code> 安装到当前 Windows 用户目录，并创建桌面与开始菜单快捷方式。</li>
+        <li>安装器会关闭旧飞享 IM 进程，并替换指向旧 <code>FeiXiangIM.exe</code> 或 <code>im_flutter.exe</code> 的快捷方式。</li>
         <li>也可以不安装，直接运行解压目录中的 <code>FeiXiangIM.exe</code>。</li>
         <li>需要卸载时运行解压目录中的 <code>uninstall.cmd</code>。</li>
       </ol>
